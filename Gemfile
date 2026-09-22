@@ -23,7 +23,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 # Images
-gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 2.1"
 
 # API
 gem "rack-cors"
