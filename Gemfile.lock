@@ -502,6 +502,7 @@ DEPENDENCIES
   rspec-rails (~> 8.0)
   rswag (~> 2.17)
   rubocop-rails-omakase
+  ruby-vips (~> 2.0)
   shoulda-matchers (~> 8.0)
   sidekiq (~> 8.1)
   solid_cable

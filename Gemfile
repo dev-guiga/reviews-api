@@ -24,6 +24,7 @@ gem "thruster", require: false
 
 # Images
 gem "image_processing", "~> 1.2"
+gem "ruby-vips", "~> 2.0"
 
 # API
 gem "rack-cors"
