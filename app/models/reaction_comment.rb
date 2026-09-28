@@ -1,0 +1,2 @@
+class ReactionComment < ApplicationRecord
+end
