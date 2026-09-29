@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
-
   get "up" => "rails/health#show", as: :rails_health_check
 
-  scope :api do
-    scope :v1 do
+  namespace :api, format: :json do
+    namespace :v1 do
       resources :interaction_reviews
       resources :book_reviews
       resources :reviews
