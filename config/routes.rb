@@ -3,12 +3,16 @@ Rails.application.routes.draw do
 
   namespace :api, format: :json do
     namespace :v1 do
-      resources :interaction_reviews
-      resources :book_reviews
-      resources :reviews
-      resources :reaction_comments
-      resources :comments
-      resources :users
+      resources :reviews do
+        resources :book_reviews
+        resources :interaction_reviews
+        resources :comments
+        resources :reaction_comments
+      end
+
+      resources :users, only: [ :index, :show, :update, :destroy ] do
+        get :me, on: :collection
+      end
     end
   end
 
