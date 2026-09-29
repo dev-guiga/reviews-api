@@ -47,6 +47,8 @@ gem "kaminari", "~> 1.2"
 gem "devise", "~> 5.0"
 gem "devise-jwt", "~> 0.13"
 
+# Soft delete
+gem "discard", ">= 0.1.0"
 
 group :development, :test do
   # Debug
