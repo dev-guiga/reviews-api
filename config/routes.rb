@@ -13,6 +13,8 @@ Rails.application.routes.draw do
       resources :users, only: [ :index, :show, :update, :destroy ] do
         get :me, on: :collection
       end
+
+      resources :dashboards, only: [ :index ]
     end
   end
 
